@@ -1,0 +1,154 @@
+#body {
+    margin: 50px;
+}
+
+#wrapper {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#alert {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    position: static;
+}
+
+#mainroom {
+    position: relative;
+}
+
+#mainflowers {
+    left: 36px;
+    top: 35.5%;
+}
+
+#mainnotes {
+    position: absolute;
+    top: 32%;
+    left: 33.1%;
+}
+
+#maincosmetics {
+    top: 72.5%;
+    left: 47.5%;
+}
+
+#messageone {
+    position: absolute;
+    top: 24%;
+    right: 18%;
+}
+
+#messagetwo {
+    position: absolute;
+    top: 34%;
+    right: 18%;
+}
+
+#messagethree {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.reveal {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.reveal:hover {
+    opacity: 1;
+}
+
+.fade {
+    position: absolute;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.fade:hover {
+    opacity: 1;
+}
+
+#maininventory {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h3 {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    border-spacing: 10px;
+    margin: 100px;
+}
+
+#comicroom {
+    position: relative;
+}
+
+#comicflowers {
+    position: absolute;
+    left: 36px;
+    top: 35.5%;
+}
+
+#comiccosmetics {
+    top: 70.5%;
+    left: 48.5%;
+}
+
+#comicnotes {
+    position: absolute;
+    top: 32%;
+    left: 33.1%;
+}
+
+#reverseroom {
+    position: relative;
+}
+
+#reversecosmetics {
+    position: absolute;
+    top: 18%;
+    left: 41%;
+}
+
+#reverseflowers {
+    position: absolute;
+    right: 36px;
+    bottom: 35.5%;
+}
+
+#reversenotes {
+    position: absolute;
+    bottom: 32%;
+    right: 33.5%;
+}
+
+#door {
+    display: flex;
+    justify-content: center;
+}
+
+.hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.hover:hover {
+    opacity: 1;
+}
