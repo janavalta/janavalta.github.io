@@ -1,0 +1,333 @@
+html, body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    overflow: hidden;
+    width: 40vh;
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+}
+
+.container {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+#separator {
+    width: 100vw;
+    height: 150vh;
+    background-color: burlywood;
+}
+
+#elevatorlighten {
+    mix-blend-mode: lighten;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+}
+  
+#elevatorholelighten {
+    position: absolute;
+    width: 40vh;
+    height: 60vh;
+    top: calc(50vh - 30vh);
+    left: calc(50vw - 20vh);
+    background-color: black;
+}
+  
+#elevatormultiply {
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: screen;
+    background-image: url(walls.png);
+    background-size: cover;
+    background-position: center;
+}
+  
+#elevatorholemultiply {
+    position: absolute;
+    width: 40vh;
+    height: 60vh;
+    top: calc(50vh - 30vh);
+    left: calc(50vw - 20vh);
+    background-color: white;
+}
+
+.buttons a {
+    position: fixed; 
+    left: calc(50vw - 35vh); 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 5vh; 
+    height: 5vh;
+    text-decoration: none; 
+    text-align: center;
+    text-shadow: 0px 0px 4px saddlebrown;
+    font-size: 4.5vh; 
+    color: cornsilk; 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: wheat;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.buttons a:hover {
+    background-color: saddlebrown;
+    color: white;
+    text-shadow: black;
+    text-shadow: 0px 0px 6px white;
+}
+  
+#lobby {
+    top: 30vh;
+}
+
+#second {
+    top: calc(30vh * 1.4);
+}
+  
+#third {
+    top: calc(30vh * 1.8);
+}
+  
+#fourth {
+    top: calc(30vh * 2.2);
+}
+
+#openbutton {
+    position: fixed;
+    top: 47vh;
+    left: calc(50vw + 25vh);
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 5vh; 
+    height: 5vh;
+    text-decoration: none; 
+    text-align: center;
+    text-shadow: 0px 0px 4px saddlebrown;
+    font-size: 2.5vh; 
+    color: cornsilk; 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: wheat;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#openbutton:hover {
+    background-color: saddlebrown;
+    color: white;
+    text-shadow: black;
+    text-shadow: 0px 0px 6px white;
+}
+
+input {
+    display: none;
+}
+
+#closed:checked ~ #left {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#closed:checked ~ #right {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#left {
+    position: fixed;
+    width: 20vh;
+    height: 60vh;
+    top: calc(50vh - 30vh);
+    left: calc(50vw - 20vh);
+    background-image: linear-gradient(to right, beige, tan);
+    transform: scaleX(1);
+    transition: 2s;
+}
+
+#right {
+    position: fixed;
+    width: 20vh;
+    height: 60vh;
+    top: calc(50vh - 30vh);
+    left: 50vw;
+    background-image: linear-gradient(to left, beige, tan);
+    transition: 2s;
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .buttons a {
+        width: 3vh;
+        height: 3vh;
+        font-size: 1.5vh;
+    }
+
+    #lobby {
+        top: 10vh;
+        left: calc(50vw - 20vh);
+    }
+
+    #second {
+        top: 10vh;
+        left: calc(50vw - 8vh);
+    }
+      
+    #third {
+        top: 10vh;
+        left: calc(50vw + 3vh);
+    }
+      
+    #fourth {
+        top: 10vh;
+        left: calc(50vw + 14vh);
+    }
+
+    #openbutton {
+        width: 3vh;
+        height: 3vh;
+        font-size: 1.5vh;
+        top: 87vh;
+        left: calc(50vw - 3vh)
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    
+    .buttons a {
+        width: 5vw;
+        height: 5vw;
+        font-size: 5vw;
+    }
+
+    #lobby {
+        top: 30vh;
+        left: 8vw; 
+    }
+    
+    #second {
+        top: 30vh;
+        left: 22vw;
+    }
+      
+    #third {
+        top: 60vh;
+        left: 8vw;
+    }
+      
+    #fourth {
+        top: 60vh;
+        left: 22vw;
+    }
+
+    #openbutton {
+        width: 5vw;
+        height: 5vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 281px) and (max-height: 654px) {
+    
+    .buttons a {
+        width: 2vh;
+        height: 2vh;
+        font-size: 2vh;
+    }
+
+    #lobby {
+        top: 10vh;
+        left: calc(50vw - 20vh);
+    }
+
+    #second {
+        top: 10vh;
+        left: calc(50vw - 8vh);
+    }
+      
+    #third {
+        top: 10vh;
+        left: calc(50vw + 3vh);
+    }
+      
+    #fourth {
+        top: 10vh;
+        left: calc(50vw + 14vh);
+    }
+
+    #openbutton {
+        width: 2vh;
+        height: 2vh;
+        font-size: 1vh;
+        top: 87vh;
+        left: calc(50vw - 3vh)
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .buttons a {
+        left: 5vw; 
+    }
+
+    #openbutton {
+        right: calc(5vw + 3vh);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .buttons a {
+        width: 5vw;
+        height: 5vw;
+        font-size: 5vw;
+    }
+
+    #lobby {
+        top: 30vh;
+        left: 8vw; 
+    }
+    
+    #second {
+        top: 30vh;
+        left: 22vw;
+    }
+      
+    #third {
+        top: 60vh;
+        left: 8vw;
+    }
+      
+    #fourth {
+        top: 60vh;
+        left: 22vw;
+    }
+
+    #openbutton {
+        width: 5vw;
+        height: 5vw;
+        font-size: 2.5vw;
+        left: 72.5vw;
+    }
+}
+
+
+
