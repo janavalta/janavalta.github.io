@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(55deg, #faf1d9 0%, #eec6d3 51%, #efe7b5 85%);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#container1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    align-content: center;
+    text-wrap: balance;
+}
+
+#container2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    align-content: center;
+    text-wrap: balance;
+}
+
+h1 {
+  text-align: center;  
+  font-family: Ojuju;
+  font-size: 10vw;
+  font-weight: bolder;
+  line-height: 15vh;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Poiret One';
+    font-size: 4vh;
+    line-height: 2vh;
+}
+
+h4 {
+    width: 50vw;
+    display: block;
+    justify-content: center;
+    text-align: left;
+    text-wrap: balance;
+    font-family: 'Poiret One';
+    font-size: 3vh;
+    margin: auto;
+}
+
+table { 
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse; 
+    
+} 
+
+th {
+    border: 2px solid black;
+    background-color: brown;
+    height: 5vh;
+    color: wheat;
+    font-family: Ojuju;
+    font-weight: 500;
+    font-size: 3vh;
+}
+td { 
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+.number {
+    width: 5vh;
+    background-color: brown;
+    border: 2px solid black;
+    color: wheat;
+    font-weight: 500;
+    font-size: 3vh;
+    font-family: Ojuju;
+}
+
+.cell {
+    width: 15vh;
+    height: 15vh;
+    background-color: wheat;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 15vh;
+    height: 15vh;
+    perspective: 1000px;
+    font-family: Nunito;
+}
+
+.flip-card-inner {
+    width: 15vh;
+    height: 15vh;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: royalblue;
+    color: white;
+    margin: auto;
+    line-height: 15vh;
+    font-size: 2.3vh;
+}
+
+.flip-card-back {
+    background-color: lightcoral;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+}
+
+.flip-card-chance, .flip-card-prompt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-chance {
+    background-color: rgb(84, 77, 156);
+    color: white;
+    line-height: 15vh;
+    font-size: 2.3vh;
+}
+
+.flip-card-prompt {
+    background-color: lightseagreen;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-wrap: balance;
+    word-wrap: break-word;
+    max-width: 13vh;
+}
