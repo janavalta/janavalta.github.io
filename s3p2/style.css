@@ -20,6 +20,7 @@ body {
 
 #container1 {
     background: linear-gradient(55deg, #B7FFB9 0%, #567BC2 100%);
+    padding: 2vw;
 }
 
 #container2 {
