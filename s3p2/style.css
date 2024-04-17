@@ -179,6 +179,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 .image {
