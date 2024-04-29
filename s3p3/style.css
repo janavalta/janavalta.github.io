@@ -45,16 +45,15 @@ html, body {
   }
   
   #textbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     position: absolute;
+    /* display: flex; */
     justify-content: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
+    align-self: center;
     width: 650px;
     height: 5vh;
-    left: 25px;
-    margin-top: 2vh;
+    margin: 2vh calc(50% - 325px) 0;
     overflow: hidden;
     text-wrap: balance;
     background-color: cornsilk;
