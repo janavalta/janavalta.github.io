@@ -7,7 +7,7 @@ let pic;
 let r, g;
 
 function setup() {
-  createCanvas(710, 710);
+  createCanvas(690, 690);
   yoff = 0.0;
   avgFreq = 0.01;
   r = random(30, 170);
