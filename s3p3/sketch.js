@@ -60,19 +60,27 @@ function keyPressed() {
     textLength += 1;
   }
 
-  if ("etat".includes(key)) {
+  if (key == "e" || key == "t" || key == "a" || key == "t") {
     avgFreq += 0.0923;
-  } else if ("insr".includes(key)) {
+  } else if (key == "i" || key == "n" || key == "s" || key == "r") {
     avgFreq += 0.0664;
-  } else if ("hdlu".includes(key)) {
+  } else if (key == "h" || key == "d" || key == "l" || key == "u") {
     avgFreq += 0.04275;
-  } else if ("cmfy".includes(key)) {
+  } else if (key == "c" || key == "m" || key == "f" || key == "y") {
     avgFreq += 0.024325;
-  } else if ("wgp".includes(key)) {
+  } else if (key == "w" || key == "g" || key == "p" || key == "b") {
     avgFreq += 0.018575;
-  } else if ("vkxqjz".includes(key)) {
+  } else if (
+    key == "v" ||
+    key == "k" ||
+    key == "x" ||
+    key == "q" ||
+    key == "j" ||
+    key == "z"
+  ) {
     avgFreq += 0.0375;
   }
+  
 }
 
 function keyTyped() {
