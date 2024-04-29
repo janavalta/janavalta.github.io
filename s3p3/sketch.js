@@ -60,7 +60,7 @@ function keyPressed() {
     textLength += 1;
   }
 
-  if (key == "e" || key == "t" || key == "a" || key == "t") {
+  if (key == "e" || key == "t" || key == "a" || key == "o") {
     avgFreq += 0.0923;
   } else if (key == "i" || key == "n" || key == "s" || key == "r") {
     avgFreq += 0.0664;
