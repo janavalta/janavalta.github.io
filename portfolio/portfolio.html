@@ -1,1 +1,459 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="page1">
+
+        <div class="container flex">
+
+            <div class="item flex-item" id="section1">
+                <div class="section-number">01</div>
+
+                <div class="image-with-text" id="s1p1">
+                    <a href="https://codepen.io/Janine-Navalta/full/YzgrpBL">
+                        <img src="s1p1.svg" title="Click to visit!" id="starone">
+                    </a>
+                    <div class="text-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 01...</div>
+                        </div>
+                        <p>A place to see the heavens through ASCII characters.</p>
+                    </div>
+                </div>
+
+                <div class="image-with-text" id="s1p2">
+                    <a href="https://codepen.io/Janine-Navalta/full/yLwpQBW">
+                        <img src="s1p2.svg" title="Click to visit!" id="startwo">
+                    </a>
+                    <div class="text-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 02...</div>
+                        </div>
+                        <p>A still world, a still life. <br> Yet objects are alive?</p>
+                    </div>
+                </div>
+
+                <div class="image-with-text" id="s1p3">
+                    <a href="https://janavalta.github.io/yourroom.html">
+                        <img src="s1p3.svg" title="Click to visit!" id="starthree">
+                    </a>
+                    <div class="text-container" id="third-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 03...</div>
+                        </div>
+                        <p>It's your room, but slightly different. <br> Take a break from traveling?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item flex-item" id="section2">
+                <div class="section-number">02</div>
+
+                <div id="orbit-container" title="Double-click to inspect." onclick="toggleSectionTwo()">
+                    <div class="big">03</div>
+                    <div class="small">01</div>
+                    <div class="medium">02</div>
+                </div>
+                <div id="inspect-text">Inspect anomalies?</div>
+
+                <div id="section-two">
+                    <h2>Detected!</h2>
+                    <a href="https://olivia-em.github.io/dsgn1020/s2a1/webring.html" id="webring" title="Click to visit.">Project 01</a>
+                    <a href="https://janavalta.github.io/s2p2/elevator.html" id="elevator" title="Click to visit.">Project 02</a>
+                    <a href="https://editor.p5js.org/jnavalta/full/B60r_BDot" id="clock" title="Click to visit.">Project 03</a>
+                    <div id="close" onclick="toggleSectionTwo()">Close Panel.</div>
+                    <div class="description" id="webring-desc">The gateway to alternate worlds!</div>
+                    <div class="description" id="elevator-desc">Studio Ghibli Elevator~</div>
+                    <div class="description" id="clock-desc">Need a device to tell time here?</div>
+                </div>
+
+            </div>
+
+            <div class="item flex-item" id="section3">
+                <div class="section-number">03</div>
+
+                <div class="image-with-text" id="s3p1">
+                    <a href="https://janavalta.github.io/s3p1/bingo.html">
+                        <img src="aries.svg" title="Click to visit!" id="aries">
+                    </a>
+                    <div class="text-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 01...</div>
+                        </div>
+                        <p>Play a quick game as you travel!</p>
+                    </div>
+                </div>
+
+                <div class="image-with-text" id="s3p2">
+                    <a href="https://janavalta.github.io/s3p2/consciouscommute.html">
+                        <img src="aquarius.svg" title="Click to visit!" id="aquarius">
+                    </a>
+                    <div class="text-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 02...</div>
+                        </div>
+                        <p>Take this app with you on your travels.</p>
+                    </div>
+                </div>
+
+                <div class="image-with-text" id="s3p3">
+                    <a href="https://janavalta.github.io/s3p3/waves.html">
+                        <img src="pisces.svg" title="Click to visit!" id="pisces">
+                    </a>
+                    <div class="text-container" id="fourth-container">
+                        <div class="section-container">
+                            <div class="section-animation">ANALYZING Project 03...</div>
+                        </div>
+                        <p>Want to visit the ocean instead?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="navbar">
+                <a href="#section1" class="tab">Section 1</a>
+                <a href="#section2" class="tab">Section 2</a>
+                <a href="#section3" class="tab">Section 3</a>
+
+                <label for="myCheck">
+                    <div class="tab">Logs</div>
+                </label>
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+            </div>
+
+            <div id="title">Janine's Portfolio</div>
+
+        </div>
+
+    </div>
+
+    <div id="page2" style="display:none">
+        <div class="return-container">
+            <label for="myCheck">
+                <img src="s1p1.svg" id="return">
+            </label>
+            <div id="return-text">Return to <br> the Galaxy?</div>
+        </div>
+
+        <label for="logCheck">
+            <div id="view-log">View Travel Logs</div>
+        </label>
+        <input type="checkbox" id="logCheck" onclick="displayLog()">
+
+        <div id="logcontainer">
+            <div id="view-lens">
+
+                <div class="mySlides" id="Week2">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 02</div>
+                                <div class="reading-title">
+                                    Ulises Carrión - Mail Art and the Big Monster from Second Thoughts
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>Mail Art is more than a decorated message and has two sub-systems. One system is the physical forms that make up the message's content, and the second is the Post System, which the artist cannot control and has its restrictions. Each system cannot exist without the other. Additionally, Mail Art can be judged and create "harmony" if it receives a response. However, it is difficult to measure Mail Art if it is not meant to collect an answer. </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>Based on the quote "But, as we have seen, an artist does not become a Mail artist by sending a postcard, no matter how 'beautiful' this card may be," what physical aspects draw the line between a decorated postcard/letter/mail from Mail Art?</li>
+                                    <li>Given that Mail Art exists, does Email Art exist and what would be the features to distinguish it? </li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week3">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 03</div>
+                                <div class="reading-title">
+                                    Laurel Schwulst & Édouard U - Selections from Creative Independent and Arena How Do You Use the Internet Mindfully
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>I find it interesting how the reading describes the different ways of creating a website through various nature metaphors that include levels of commitment and maintenance to the website's creation. The first selection also mentions how artists have endless possibilities for designing websites that do not need to follow how big corporations create them. To relate the first and second selections, artists can create website formats that allow visitors to make connections between multiple forms of media that do not inherently relate to each other, making the web a collective experience rather than an isolated one.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>Édouard U includes a section of Lifelong Kindergarten by Mitchel Resnick. Based on the last sentence, what are examples of websites that are "closed-started" while remaining open-ended?</li>
+                                    <li>In instances when artists create websites as a way to show their portfolio to companies, what are ways for them to design in a way that is "digestible" to employers while "complementing what they do rather than competing or repeating"?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week4">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 04</div>
+                                <div class="reading-title">
+                                    Olia Lialina - STILL THERE Ruins and Templates of Geocities from Lost and Living (in) Archives
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>Olia Lialina describes an interesting perspective of how the archive of Geocities can create a more in-depth understanding of the web and its visual features, such as themed neighborhoods, small images and GIFs, and bordered backgrounds, that were prevalent in the 20th century. She also notes two common forms of announcements on the pages: one being the site developer promising to update the page, and the second being an announcement that the page will no longer update or will move. I also found it compelling and agreed that websites can be “alive” despite not being up-to-date, and I think that is because of how the themed neighborhoods did a great job on emulating a real life neighborhood and community.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>Are there any modern communities reminiscent of Geocities?</li>
+                                    <li>Similarly, are there aspects of the modern internet, similar to the c.gif, that can be traced back specifically to Geocities?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week6">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 06</div>
+                                <div class="reading-title">
+                                    Bojana Coklyat & Shannon Finnegan - Selections from Alt-Text as Poetry Workbook
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>The reading emphasizes how alt-text can be part of the artwork rather than an afterthought or add-on. The authors also point out how artists can have the power to prioritize the accessibility of their artwork on an institutional level and make tangible change. It was interesting that Coklyat and Finnegan asked us to think of alt-text as poetry and translation, as I have never considered alt-text as another form of different media. I also appreciate how the text brings up how to navigate objectivity and subjectivity in alt-text to prioritize comprehension, conciseness, and creativity.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>What led Coklyat & Finnegan to compare alt-text specifically with poetry and translation, and what other comparisons could be made with alt-text and other forms of media?</li>
+                                    <li>The authors describe objectivity as something that "validates the perspective of white, cis, middle and upper-class men while marking other perspectives as "subjective," so I wonder how could this be explained further in connection with alt-text and audiences that are not part of those categories? </li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week8">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 08</div>
+                                <div class="reading-title">
+                                    "A Personal Computer for Children of All Cultures" from Decolonising the Digital
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>Computer programming and design heavily rely on English and the Latin alphabet, which excludes many non-English speakers and reflects a lack of diversity in the industry. Nasser attempts to address this issue by creating a non-English programming language using Arabic. However, the effort cannot significantly change the industry since simply translating existing systems to accommodate other languages does not address the root issue of English's centrality in computer languages. Additionally, this solution places non-English languages as an afterthought in computer science.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>What are some current design practices that try to address this linguistic gap?</li>
+                                    <li>How can existing internet protocols and computer programming languages be updated to acknowledge this bias?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week9">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 09</div>
+                                <div class="reading-title">
+                                    Ben Duvall - Selections from New Modernism(s)
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>The reading defines graphic design as being composed of surfaces and signs in the form of images and types. Duvall differentiates Modernism, Postmodernism, and Hypermodernism using this definition. Modernism was concerned with communicating the message in an over-simplified way, while Postmodernism rejected existing design systems using "ambiguous" typography.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>What are the limitations of having a hyperlinked sign?</li>
+                                    <li>In what ways is design at this time evolving past the hyperlinked sign, if any?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week11">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 11</div>
+                                <div class="reading-title">
+                                    Dot Tuer - Beyond the New Media Frame The Poetics of Absence in Vera Frenkel’s String Games
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>Tuer discusses the ideas of absence and connection in Vera Frenkel's artwork, particularly in String Games: Improvisations for Inter-City Video. The text also brings in discussions from other figures about "String Games," one of them being how the artwork demonstrates a significant use of new technology but has not received critical recognition until later. Tuer also mentions a comparison between String Games and the Body Missing website and while both have different purposes, they show a "pioneering use of technology."</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>How do modern technologies demonstrate this idea of "poetics of absence"?</li>
+                                    <li>Why was Cat's Cradle used to model the String Games?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week13">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 13</div>
+                                <div class="reading-title">
+                                    Neta Bomani & Sabii Borno - Beyond Dark Matter from Logic Issue 15 Beacons
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>“Beyond Dark Matter” tells an important story reflecting the biases and problematic histories within technology. Gem learns about these numerous events that are often untold through the installation of The Way. She learns to  combat the limitations of technology with The Beyond by finding solutions that are community-based.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>In what ways are modern technologies still reflecting these biases and problematic histories?</li>
+                                    <li>In turn, what are current community-based solutions to these problems?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mySlides" id="Week14">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="date">Week 14</div>
+                                <div class="reading-title">
+                                    Boris Groys - Art on the Internet
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="response">
+                            <td>"Art on the Internet" delves into how the Internet has changed art and its essence. Although I found parts of the essay difficult to follow, his discussion on the de-fictionalization and fictionalization of art was captivating. Groys argues that the Internet has shifted art towards a more interactive and communicative process, moving away from traditional object-based forms. He also explores the differences between art documentation in real life and its online presence, emphasizing how the creative process often happens in isolation. This explains why artists often prefer working in private spaces rather than in front of an audience. Furthermore, Groys raises an intriguing argument regarding the rejection of identification in this scenario, indicating an intricate relationship between artistic expression, digital representation, and hidden identity.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="question">Questions:</div>
+                                <ul class="question-list">
+                                    <li>The reading talks about how art and politics share a space in the present and want to shape the future, but they differ in how present they are in the future. In this case, where would political art fall?</li>
+                                    <li>Groys notes that "everything disappears rather than emerges - most Internet productions (and personae) never get the degree of public attention that their authors hoped to achieve." Are there current practices that combat this?</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <table id="buttons">
+                    <tr>
+                        <td>
+                            <button onclick="plusDivs(-1)">&#10094;</button>
+                        </td>
+                        <td>
+                            <button onclick="plusDivs(1)">&#10095;</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        
+            <div class="return-container">
+                <label for="logCheck">
+                    <img src="s1p2.svg" id="return2">
+                </label>
+                <div id="return-text">[ Close View ]<br></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          if (checkBox.checked == true) {
+            page2.style.display = "block";
+            page2.scrollIntoView();
+          } else {
+             page2.style.display = "none";
+          }
+        }
+
+        function toggleSectionTwo() {
+            var sectionTwo = document.getElementById("section-two");
+            if (sectionTwo.style.display === "none") {
+                sectionTwo.style.display = "flex";
+            } else if (sectionTwo.style.display === "flex") {
+                sectionTwo.style.display = "none";
+            } else {
+                sectionTwo.style.display = "none";
+            }
+        }
+
+        function displayLog() {
+          var checkBox = document.getElementById("logCheck");
+          if (checkBox.checked == true) {
+            logcontainer.style.display = "flex";
+            logcontainer.scrollIntoView();
+          } else {
+            logcontainer.style.display = "none";
+          }
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+
+</body>
+
+</html>
