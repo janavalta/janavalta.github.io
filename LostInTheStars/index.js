@@ -68,20 +68,24 @@ function addEntryToDom(event) {
 
 entryForm.addEventListener(`submit`, addEntryToDom);
 
-// let butto = document.querySelector("#btn-id")
-// let text = document.querySelector("#entry")
+let butto = document.querySelector("#btn-id")
+let text = document.querySelector("#entry")
+let title = document.querySelector("#entry-title")
 
-// // eventListener "click" on button
-// butto.addEventListener("click", () => {
-//     let valueinput = text.value
+// eventListener "click" on button
+butto.addEventListener("click", () => {
+    let valueinput = text.value
+    let titleinput = title.value
 
-//     let blobdtMIME =
-//         new Blob([valueinput], { type: "text/plain" })
-//     let url = URL.createObjectURL(blobdtMIME)
-//     let anele = document.createElement("a")
-//     anele.setAttribute("download", "Downloaded Successfully");
-//     anele.href = url;
-//     anele.click();
-//     console.log(blobdtMIME)
+    let combinedText = valueinput + "\n\n" + titleinput
 
-// })
+    let blobdtMIME =
+        new Blob([combinedText], { type: "text/plain" })
+    let url = URL.createObjectURL(blobdtMIME)
+    let anele = document.createElement("a")
+    anele.setAttribute("download", "Travel Entry");
+    anele.href = url;
+    anele.click();
+    console.log(blobdtMIME)
+
+})
