@@ -1,0 +1,273 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background-color: #2e3192;
+    width: 100%;
+    height: 300%;
+    margin: 0;
+}
+
+#galaxy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+    overflow: hidden;
+}
+
+#grid {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+#galaxy {
+    position: relative;
+}
+
+#grid {
+    position: absolute
+}
+
+@keyframes rotate {
+    0% { opacity: 0%;
+            rotate: -10deg; }
+    50% { opacity: 20%;
+            rotate: 10deg; }    
+    100% { opacity: 40%;
+            rotate: -10deg; }   
+}
+
+#pisces {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-25deg);
+}
+
+#pisces:hover {
+    background-image: url("zodiac_Pisces.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+
+#aries {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(25deg);
+}
+
+#aries:hover {
+    background-image: url("zodiac_Aries.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#aquarius {
+    width: 13vw;
+    height: 33vh;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-55deg);
+}
+
+#aquarius:hover {
+    background-image: url("zodiac_Aquarius.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#taurus {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(55deg);
+}
+
+#taurus:hover {
+    background-image: url("zodiac_Taurus.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#capricorn {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-85deg);
+}
+
+#capricorn:hover {
+    background-image: url("zodiac_Capricorn.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#gemini {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(85deg);
+}
+
+#gemini:hover {
+    background-image: url("zodiac_Gemini.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#sagittarius {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-115deg);
+}
+
+#sagittarius:hover {
+    background-image: url("zodiac_Sagittarius.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#cancer {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(115deg);
+}
+
+#cancer:hover {
+    background-image: url("zodiac_Cancer.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#scorpio {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-145deg);
+}
+
+#scorpio:hover {
+    background-image: url("zodiac_Scorpio.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#leo {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(145deg);
+}
+
+#leo:hover {
+    background-image: url("zodiac_Leo.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#libra {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-175deg);
+}
+
+#libra:hover {
+    background-image: url("zodiac_Libra.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+
+#virgo {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(175deg);
+}
+
+#virgo:hover {
+    background-image: url("zodiac_Virgo.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#here {
+    font-family: "Silkscreen", monospace;
+    text-align: center;
+    color: cornsilk;
+    /* animation: fadeIn 14s; */
+}
