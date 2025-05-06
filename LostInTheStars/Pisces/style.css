@@ -1,0 +1,150 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow: hidden;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background-color: #2e3192;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#logcontainer {
+    display: flex;
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#view-lens {
+    position: absolute;
+    width: 90vh;
+    height: 90vh;
+    border-radius: 50%;
+    background-color: #2e3192;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#constellation {
+    width: 90vh;
+    height: 90vh;
+    background-image: url("zodiac_Pisces.svg");   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.header {
+    padding-top: 10vh;
+    font-family: "Silkscreen", monospace;
+    font-size: 48px;
+    text-align: center;
+    color: cornsilk;
+}
+
+#view-fortune {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    text-align: center;
+    color: cornsilk;
+    display: block;
+    margin-top: 12px;
+}
+
+#view-fortune:hover {
+    cursor: pointer;
+    color: #ffa7b4b3;
+    text-shadow: 0 0 3px #ff3554b3, 0 0 5px #ff3554b3;
+    transform: scale(110%, 110%)
+}
+
+#fortune {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    color: cornsilk;
+    display: none;
+    position: relative;
+}
+
+#fortune:hover {
+    cursor: pointer;
+    text-shadow: 0 0 3px #ff3554b3, 0 0 5px #ff3554b3;
+}
+
+.return-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10vh;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.return-container:hover > #return-text {
+    opacity: 1;
+    animation: shimmer 1s infinite;
+}
+
+#return-text {
+    opacity: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: cornsilk;
+    margin-top: 12px;
+}
+
+#return:hover {
+    cursor: pointer;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 100%; }
+    50% { opacity: 10%; }    
+}
+
+@keyframes rotate {
+    0% { opacity: 0;
+            rotate: -10deg; }
+    50% { opacity: 50;
+            rotate: 10deg; }    
+    100% { opacity: 100;
+            rotate: -10deg; }   
+}
+
+img { 
+    filter: drop-shadow(0px 0px 30px cornsilk);
+    width:10vh;
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.2);
+    rotate: 10deg;
+    animation: rotate 1s infinite;
+}
