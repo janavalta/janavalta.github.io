@@ -66,7 +66,7 @@ function addEntryToDom(event) {
         getEntryText[0].value = ``;
 }
 
-// entryForm.addEventListener(`submit`, addEntryToDom);
+entryForm.addEventListener(`submit`, addEntryToDom);
 
 // let butto = document.querySelector("#btn-id")
 // let text = document.querySelector("#entry")
