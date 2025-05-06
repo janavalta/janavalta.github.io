@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Lost in the Stars</title>
+        <link rel="stylesheet" href="style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1 class="title">Lost Traveler's Journal</h1></header>
+    
+        <!-- Journal Entry Section -->
+        <section class="section journal-section">
+          <div class="container">
+            <div class="container-row container-row-journal">
+              <div class="container-item container-item-journal">
+                <form id="entryForm" action="">
+                  <label for="entry-title" class="journal-label">Entry Title</label>
+                  <input
+                    type="text"
+                    name="entry-title"
+                    id="entry-title"
+                    class="entry-text-title"
+                    placeholder="Name of entry"
+                  />
+                  <label for="entry" class="journal-label">Your Entry</label>
+                  <textarea
+                    name="daily-entry"
+                    id="entry"
+                    class="entry-text-box"
+                    placeholder="Write to your past or future self, or write to a traveler who is also feeling lost."
+                  ></textarea>
+                  <button class="btn-main entry-submit-btn" id="btn-id" type="submit">Send into the abyss.</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Journal Entry Results -->
+        <section class="section sectionEntryResults" id="entryResultsSection">
+          <div class="container">
+            <div class="container-row entryResultRow"></div>
+          </div>
+        </section>
+    
+        <script src="index.js"></script>
+      </body>
+</html>

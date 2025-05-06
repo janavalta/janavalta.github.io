@@ -1,154 +1,595 @@
-#body {
-    margin: 50px;
+* {
+    scroll-behavior: smooth;
 }
 
-#wrapper {
-    margin: 40px;
-    display: flex;
-    justify-content: center;
+html {
+    overflow-x: hidden;
+}
+
+head {
+    display: none;
+}
+
+body {
+    background-color: #2e3192;
+    width: 100%;
+    height: 300%;
+    margin: 0;
+}
+
+#galaxy {
     position: relative;
-}
-
-#alert {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 40px;
-    position: static;
+    text-wrap: balance;
+    overflow: hidden;
 }
 
-#mainroom {
-    position: relative;
-}
-
-#mainflowers {
-    left: 36px;
-    top: 35.5%;
-}
-
-#mainnotes {
+#grid {
     position: absolute;
-    top: 32%;
-    left: 33.1%;
-}
-
-#maincosmetics {
-    top: 72.5%;
-    left: 47.5%;
-}
-
-#messageone {
-    position: absolute;
-    top: 24%;
-    right: 18%;
-}
-
-#messagetwo {
-    position: absolute;
-    top: 34%;
-    right: 18%;
-}
-
-#messagethree {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-}
-
-.reveal {
-    opacity: 0;
-    transition: all 2s;
-}
-
-.reveal:hover {
-    opacity: 1;
-}
-
-.fade {
-    position: absolute;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.fade:hover {
-    opacity: 1;
-}
-
-#maininventory {
-    margin-top: 0px;
-    margin-bottom: 100px;
-    display: flex;
+    align-items: center;
     justify-content: center;
-    position: relative;
 }
 
-h3 {
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
 }
 
 td {
     display: table-cell;
     vertical-align: inherit;
+    unicode-bidi: isolate;
 }
 
-table {
-    border-spacing: 10px;
-    margin: 100px;
-}
-
-#comicroom {
+#galaxy {
     position: relative;
 }
 
-#comicflowers {
-    position: absolute;
-    left: 36px;
-    top: 35.5%;
+#grid {
+    position: absolute
 }
 
-#comiccosmetics {
-    top: 70.5%;
-    left: 48.5%;
+@keyframes rotate {
+    0% { opacity: 0%;
+            rotate: -10deg; }
+    50% { opacity: 20%;
+            rotate: 10deg; }    
+    100% { opacity: 40%;
+            rotate: -10deg; }   
 }
 
-#comicnotes {
-    position: absolute;
-    top: 32%;
-    left: 33.1%;
+#pisces {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-25deg);
 }
 
-#reverseroom {
+#pisces:hover {
+    background-image: url("zodiac_Pisces.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+
+#aries {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(25deg);
+}
+
+#aries:hover {
+    background-image: url("zodiac_Aries.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#aquarius {
+    width: 13vw;
+    height: 33vh;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-55deg);
+}
+
+#aquarius:hover {
+    background-image: url("zodiac_Aquarius.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#taurus {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(55deg);
+}
+
+#taurus:hover {
+    background-image: url("zodiac_Taurus.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#capricorn {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-85deg);
+}
+
+#capricorn:hover {
+    background-image: url("zodiac_Capricorn.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#gemini {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(85deg);
+}
+
+#gemini:hover {
+    background-image: url("zodiac_Gemini.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#sagittarius {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-115deg);
+}
+
+#sagittarius:hover {
+    background-image: url("zodiac_Sagittarius.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#cancer {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(115deg);
+}
+
+#cancer:hover {
+    background-image: url("zodiac_Cancer.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#scorpio {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-145deg);
+}
+
+#scorpio:hover {
+    background-image: url("zodiac_Scorpio.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#leo {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(145deg);
+}
+
+#leo:hover {
+    background-image: url("zodiac_Leo.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#libra {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-175deg);
+}
+
+#libra:hover {
+    background-image: url("zodiac_Libra.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+
+#virgo {
+    width: 13vw;
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(175deg);
+}
+
+#virgo:hover {
+    background-image: url("zodiac_Virgo.svg");
+    animation: rotate 2s infinite;
+    cursor: pointer;
+}
+
+#here {
+    font-family: "Silkscreen", monospace;
+    text-align: center;
+    color: cornsilk;
+}
+
+#star {
+    background-image: url("star.svg");
+    height: 33vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#orbit-container {
+    margin: auto;
     position: relative;
+    top: 5vh;
+    height: 33vh;
+    width: 33vh;
+    text-align: center;
 }
 
-#reversecosmetics {
+.big {
     position: absolute;
-    top: 18%;
-    left: 41%;
+    background: #ff3554b3;
+    backdrop-filter: blur(5px);
+    height: 5vh;
+    width: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 30px #ff3554b3);
+    font-size: 50px;
+    line-height: 40vh;
+    color: cornsilk;
 }
 
-#reverseflowers {
+.small {
     position: absolute;
-    right: 36px;
-    bottom: 35.5%;
+    top: 0%;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background: cornsilk;
+    font-size: 25px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 30px cornsilk);
+    animation: orbit infinite ease-in-out 6s;
+    color: #ff3554b3;
+    text-shadow: 0 0 3px #ff3554b3, 0 0 5px #ff3554b3;
 }
 
-#reversenotes {
-    position: absolute;
-    bottom: 32%;
-    right: 33.5%;
+@keyframes orbit{
+    0%{
+      left:0%;
+      z-index:1;
+      scale:0.7;
+      transform:translate(0%,-70%);
+    }
+    25%{
+      scale:0.3;
+      transform:translate(0%,-70%);
+    }
+    50%{
+      left:100%;
+      top: 100%;
+      z-index:1;
+      
+    }
+    50.001%{
+      z-index:3;
+      
+    }
+    75%{
+      scale:1;
+    }
+    100%{
+      left:0%;
+      transform:translate(0%,-70%);
+      z-index:3;
+      scale:0.72; 
+    }
 }
 
-#door {
-    display: flex;
-    justify-content: center;
+/* My Starter Template */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.hover {
-    opacity: 0.5;
-    transition: 0.3s;
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1.6;
+  color: cornsilk;
 }
 
-.hover:hover {
-    opacity: 1;
+/* Global Typography */
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+form,
+textarea {
+  font-size: 1rem;
+}
+
+button {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #2e3192;
+  color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Section Container Positions, Spacing, Utilities */
+
+header {
+  text-align: center;
+  margin: 1em auto;
+  margin-top: 72px;
+}
+
+.section {
+  padding: 1em 1em;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+.container-row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Button Standard */
+
+.btn-main,
+.btn-light,
+.btn-dark {
+  display: block;
+  padding: 0.6rem 2rem;
+  margin: 1rem;
+  transition: all 0.1s;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #2e3192;
+  background-color: palevioletred;
+}
+
+.btn-light {
+  color: #2e3192;
+  background-color: cornsilk;
+}
+
+.btn-dark {
+  color: cornsilk;
+  background-color: #2e3192;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: cornsilk;
+  color: #2e3192;
+  font-weight: 700;
+  transform: scale(1.08);
+}
+
+/* Project Starts Here */
+
+/* Journal Entry Section */
+
+/* Title */
+
+.entry-text-title {
+  width: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: cornsilk;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.entry-text-title:focus {
+  outline-color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #2e3192;
+  font-size: 1rem;
+}
+
+.entry-text-title::placeholder {
+  color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+}
+
+.entry-text-title::-ms-value {
+  color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+}
+
+/* Text Box */
+
+.container-row-journal {
+  display: flex;
+  justify-content: center;
+}
+
+.entry-form {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.journal-label {
+  display: block;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.entry-text-box {
+  width: 100%;
+  height: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: cornsilk;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@media (min-width: 769px) {
+  .entry-text-box {
+    width: 40em;
+    height: 20em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2px;
+    border: unset;
+    background-color: cornsilk;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+.entry-text-box:focus {
+  outline-color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #2e3192;
+  font-size: 1rem;
+}
+
+.entry-text-box::placeholder {
+  color: #2e3192;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+}
+
+.entry-submit-btn {
+  margin: 0;
+}
+
+/* Journal Results Section */
+
+.sectionEntryResults {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.entryResultRow {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 1em auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.single-entry-div {
+  max-width: 100%;
+
+  margin: 1em auto;
+  padding: 1em 1em;
+}
+
+.single-entry-date {
+  background-color: palevioletred;
+  width: 100%;
+}
+
+.heading-results {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #2e3192;
 }
