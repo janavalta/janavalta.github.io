@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Scorpio</title>
+        <link rel="stylesheet" href="style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
 
+    <body>
+        <div id="logcontainer">
+            <div id="view-lens">
+                <div id="constellation">
+                    <div class="header">
+                        Scorpio
+                    </div>
+                    <div id="view-fortune" onclick="toggleFortune()">
+                        [ View your fortune? ]</br>
+                    </div>
+                    <div id="fortune" title="Click to close fortune." onclick="closeFortune()">
+                        The stars says:</br>
+                        "Look at everything you've achieved despite being afraid. </br>You got your back time and time again."
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="return-container">
+            <a href="https://janavalta.github.io/LostInTheStars/galaxy.html"><img src="star.svg" id="return"></a>
+            <div id="return-text">
+                Let's go back!
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function toggleFortune() {
+            var fortune = document.getElementById("fortune");
+            var viewmsg = document.getElementById("view-fortune");
+            fortune.style.display = "flex";
+            viewmsg.style.display = "none";
+        }
+
+        function closeFortune() {
+            var fortune = document.getElementById("fortune");
+            var viewmsg = document.getElementById("view-fortune");
+            fortune.style.display = "none";
+            viewmsg.style.display = "block";
+        }
+    </script>
+</html>
