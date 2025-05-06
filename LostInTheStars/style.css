@@ -360,20 +360,10 @@ td {
   box-sizing: border-box;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'IBM Plex Mono', monospace;
   line-height: 1.6;
-  background: #2e3192;
   color: cornsilk;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 900px;
 }
 
 /* Global Typography */
