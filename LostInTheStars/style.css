@@ -404,7 +404,7 @@ button {
 header {
   text-align: center;
   margin: 1em auto;
-  margin-top: 72px;
+  margin-top: 24px;
 }
 
 .section {
@@ -562,6 +562,7 @@ input[class^='btn-']:hover {
 .sectionEntryResults {
   width: 100%;
   margin: 0 auto;
+  margin-top: 24px;
 }
 
 .entryResultRow {
@@ -591,4 +592,62 @@ input[class^='btn-']:hover {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #2e3192;
+}
+
+.return-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.return-container:hover > #return-text {
+  opacity: 1;
+  animation: shimmer 1s infinite;
+}
+
+#return-text {
+  opacity: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: cornsilk;
+  margin-top: 12px;
+}
+
+#return:hover {
+  cursor: pointer;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 100%; }
+  50% { opacity: 10%; }    
+}
+
+@keyframes rotate {
+  0% { opacity: 0;
+          rotate: -10deg; }
+  50% { opacity: 50;
+          rotate: 10deg; }    
+  100% { opacity: 100;
+          rotate: -10deg; }   
+}
+
+img { 
+  filter: drop-shadow(0px 0px 30px cornsilk);
+  width:10vh;
+  transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.2);
+  rotate: 10deg;
+  animation: rotate 1s infinite;
 }
